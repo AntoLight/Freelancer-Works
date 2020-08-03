@@ -1,0 +1,507 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    background-color: #fd9496;
+    min-width: 100%;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 1.6rem;
+}
+
+h1,
+h2,
+h2,
+h4 {
+    font-family: "Oswald", sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+p,
+span,
+a {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+.title {
+    font-size: 2em;
+    margin: 1em 0;
+    border-bottom: 5px dashed grey;
+    padding: 0 0 0.2em 0;
+    font-weight: 900;
+    text-align: left;
+}
+
+.title span {
+    margin-left: 0.5em;
+}
+/* 
+----------------Navegacion------------------
+*/
+
+.navbar a {
+    font-size: 2rem;
+    margin-right: 1em;
+}
+
+.navbar .navbar-brand {
+    font-size: 3rem;
+}
+
+.nat-act {
+    text-align: left;
+}
+
+/* 
+---------------- Hero ------------------
+*/
+
+.hero {
+    background-image: url(../images/hero.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: grey 1em solid;
+}
+
+.hero-content {
+    background-color: rgb(0, 0, 0, 0.6);
+    width: 50%;
+    margin: 0 auto 0 4em;
+    padding: 1em 0 16em 0;
+}
+
+.hero-content h1 {
+    color: white;
+    font-weight: 500;
+}
+.hero-content blockquote p {
+    color: white;
+    padding-top: 1em;
+}
+
+.hero-text {
+    margin-top: 5em;
+    padding: 1em;
+    font-family: "Courgette", cursive;
+    color: white;
+    line-height: 1.5;
+    font-size: 2.2rem;
+}
+
+.hero-content a {
+    margin: 0.5em 0 0 1.4em;
+    font-weight: 900;
+    color: white !important;
+    font-size: 1.6rem;
+}
+
+@media (max-width: 992px) {
+    .hero-content {
+        width: 90%;
+        margin: 0 auto 0 1em;
+        padding: 1em 0 12em 0;
+    }
+
+    .hero-text {
+        margin-top: 2em;
+        font-size: 2rem;
+    }
+}
+/* 
+----------------Information------------------
+*/
+
+.information {
+    margin: 5em 0;
+    position: relative;
+}
+
+.information h1 {
+    font-size: 4rem;
+}
+
+.information p {
+    font-size: 6rem;
+    margin: 0.5em 0;
+    color: #007bff;
+    font-weight: 900;
+}
+
+.information h3 {
+    margin: 1em 0;
+}
+
+.information h1,
+.information h3 {
+    text-align: center;
+}
+
+.city-1 {
+    position: absolute;
+    content: "";
+    top: 0;
+    font-size: 15em;
+    left: 10%;
+    right: 70%;
+    opacity: 0.2;
+}
+
+.city-2 {
+    position: absolute;
+    content: "";
+    top: 0;
+    font-size: 15em;
+    left: 60%;
+    right: 20%;
+    transform: scale(-1, 1);
+    opacity: 0.2;
+}
+
+@media (max-width: 768px) {
+    .city-2 {
+        display: none;
+    }
+    .city-1 {
+        left: 05%;
+    }
+}
+/* 
+----------------Cards------------------
+*/
+
+.title-offer {
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.background-color {
+    background-color: rgb(233, 231, 231);
+    padding: 1em 0;
+    padding-bottom: 5em;
+    border-top: gray 5px solid;
+    border-bottom: gray 5px solid;
+    margin: 3em 0;
+}
+
+@media (max-width: 992px) {
+    .cards {
+        margin-top: 1em;
+    }
+}
+.card {
+    height: 32em;
+    margin: 0 auto;
+    transition: 0.3s all ease;
+}
+
+.card:hover {
+    transform: translateX(1em);
+    transform: scale(1.05);
+}
+.card-body {
+    text-align: center;
+}
+
+.card img {
+    height: 8em;
+}
+
+.card-body p {
+    line-height: 1.5;
+}
+
+.card a {
+    padding: 0.5em 1em;
+    font-size: 0.8em;
+}
+
+.card-header {
+    font-family: "Oswald", sans-serif;
+    font-weight: 900;
+}
+/* 
+----------------Images and Form------------------
+*/
+
+/*Form*/
+.col-md-5 form {
+    background-color: grey;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.space {
+    padding-top: 1em;
+}
+
+.form-control {
+    padding: 0.8em;
+    font-size: 1.3rem;
+}
+
+.date {
+    width: 32% !important;
+    display: inline-block;
+}
+
+.resize {
+    width: 90%;
+}
+.col-md-5 form td p {
+    font-family: "Roboto", sans-serif;
+    padding-bottom: 0.1em;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .col-md-5 {
+        margin-top: 1em;
+    }
+}
+.button {
+    width: 50% !important;
+    transition: all ease 0.3s;
+}
+.button:hover {
+    transform: scale(1.05);
+}
+
+.alert-covid {
+    margin-top: 2em;
+}
+.alert-danger {
+    margin-top: 1em;
+    display: none;
+}
+/* Images */
+.swiper-container {
+    border: 5px solid rgb(32, 32, 32);
+    border-radius: 10px;
+}
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+}
+@media (max-width: 768px) {
+    .swiper-container {
+        width: 24em;
+        height: 15em;
+    }
+    .swiper-slide img {
+        width: 24em;
+        height: 15em;
+    }
+}
+
+/* 
+---------------- Trust Us ------------------
+*/
+
+.trust {
+    margin: 5em 0;
+    position: relative;
+}
+.trust::before {
+    content: "";
+    height: 2em;
+    width: 100%;
+    background-color: grey;
+    top: 48%;
+    position: absolute;
+    left: 0;
+}
+
+@media (max-width: 768px) {
+    .trust::before {
+        top: 65%;
+        left: 0;
+    }
+}
+.trust div {
+    margin-top: 2em;
+    text-align: center;
+}
+.award-text {
+    padding: 1em 0;
+    background-color: rgb(175, 174, 174);
+    margin-bottom: 7em;
+    border-radius: 10px;
+    border: 5px solid rgb(83, 81, 81);
+}
+@media (max-width: 768px) {
+    .award-text {
+        margin-bottom: 4em;
+    }
+    .badge {
+        font-size: 1.5rem;
+    }
+}
+.award-text blockquote p {
+    line-height: 2;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #007bff;
+}
+
+.award-text blockquote p svg {
+    margin: 0 0.5em;
+    color: rgb(230, 170, 42);
+}
+.award-text a {
+    font-size: 2rem;
+    margin-top: 0.5em;
+}
+.award-image img {
+    width: 10em;
+    height: 20em;
+}
+
+.
+
+/* 
+---------------- Trophys ------------------
+*/
+
+.trophys-information p {
+    line-height: 1.5;
+}
+
+.trophys-information p i {
+    font-weight: 700;
+}
+.trophys-information p a {
+    font-size: 2rem;
+}
+
+.trophys-newsletter {
+    background-image: url(../images/news-backg.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 2em 0;
+    margin-top: 4em !important;
+}
+
+.trophys-newsletter h4 {
+    text-align: right;
+    margin-top: 1em;
+}
+
+.trophys-newsletter h4 a {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.trophys-newsletter p {
+    text-align: right;
+    font-size: 1.2rem;
+}
+
+.tropys-border {
+    border-right: 3px grey dashed;
+}
+
+@media (max-width: 768px) {
+    .trophys-newsletter {
+        background-image: none;
+        background-color: rgb(180, 180, 180);
+    }
+    .tropys-border {
+        border-right: 3px rgb(65, 65, 65) dashed;
+    }
+}
+
+.award-icons {
+    font-size: 2rem;
+    color: #007bff;
+    margin-left: 0.5em;
+}
+/* 
+---------------- Footer ------------------
+*/
+
+.page-footer {
+    margin-top: 10em;
+    background-color: gray;
+}
+
+.footer-copyright {
+    margin-top: 3em;
+    background-color: rgb(47, 47, 47);
+    color: white;
+}
+
+.border-footer {
+    border-right: 3px solid rgb(47, 47, 47);
+}
+
+.navigate-footer {
+    border-right: 3px solid rgb(47, 47, 47);
+}
+
+@media (max-width: 768px) {
+    .border-footer {
+        border-bottom: 3px solid rgb(47, 47, 47);
+        border-right: none;
+    }
+
+    .navigate-footer {
+        border-bottom: 3px solid rgb(47, 47, 47);
+        border-right: none;
+    }
+}
+.follow h4 {
+    font-size: 2rem;
+    color: white;
+    font-family: "Oswald", sans-serif;
+}
+
+.follow div {
+    margin-top: 0.5em;
+}
+
+.translate h4 {
+    margin-top: 1em;
+    font-size: 2rem;
+    color: white;
+    font-family: "Oswald", sans-serif;
+}
+
+.translate div {
+    margin-top: 0.5rem;
+}
+
+.overtext {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 0.2em;
+    font-family: "Oswald", sans-serif;
+}
+
+.list-unstyled li a {
+    color: rgb(47, 47, 47);
+}
+/* 
+<!-- header -->
+<div id="header">
+
+	<!-- inner header -->
+	<div class="inner-head">
+    	<a href="https://www.corporates.com"><img src="https://www.corporates.com/images/PCHtitleweb.jpg" style="padding-left:55px" alt="Preferred Corporate Housing - www.corporates.com"></a>
+    </div>
+	<!-- inner header-END -->
+
+</div>
+<!-- header-END -->
+*/

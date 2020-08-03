@@ -1,0 +1,395 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    background-color: #fd9496;
+    min-width: 100%;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 1.6rem;
+}
+
+h1,
+h2,
+h2,
+h4 {
+    font-family: "Oswald", sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+p,
+span,
+a {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+.display-3 {
+    margin: 1em 0;
+    border-bottom: 5px dashed grey;
+    padding: 0 0 0.2em 0;
+    font-weight: 900;
+    text-align: left;
+}
+
+.display-3 span {
+    margin-left: 0.5em;
+}
+
+@media (max-width: 768px) {
+    .badge {
+        display: none;
+    }
+}
+/* 
+----------------Navegacion------------------
+*/
+
+.navbar a {
+    font-size: 2rem;
+    margin-right: 1em;
+}
+
+.navbar-brand {
+    margin-left: 2em;
+}
+
+.navbar-nav {
+    margin-left: 2em;
+}
+.nat-act {
+    text-align: left;
+}
+
+/* 
+---------------- Hero ------------------
+*/
+
+.hero {
+    background-image: url(../images/plane.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: grey 1em solid;
+}
+
+.hero-content {
+    background-color: rgb(0, 0, 0, 0.6);
+    width: 50%;
+
+    padding: 1em 0 16em 0;
+}
+
+.hero-content h1 {
+    color: #009edd;
+    font-weight: 500;
+}
+.hero-content blockquote p {
+    color: #009edd;
+    padding-top: 0.2em;
+    font-size: 2.5rem;
+}
+
+.hero-text {
+    margin-top: 5em;
+    font-family: "Courgette", cursive;
+    color: white;
+    line-height: 1.5;
+    font-size: 2.2rem;
+}
+
+.hero-text span {
+    font-weight: 900;
+    color: #007bff;
+}
+
+.hero-content a {
+    font-weight: 900;
+    color: white !important;
+    font-size: 1.6rem;
+    margin-top: 1em;
+}
+
+@media (max-width: 992px) {
+    .hero-content {
+        width: 90%;
+        margin: 0 auto 0 1em;
+        padding: 1em 0 12em 0;
+    }
+
+    .hero-text {
+        margin-top: 2em;
+        font-size: 2rem;
+    }
+}
+/* 
+---------------- Information ------------------
+*/
+@media (max-width: 756px) {
+    .information-container {
+        max-width: none;
+    }
+}
+
+.information {
+    margin: 3em 0;
+    z-index: 99;
+}
+
+.information h1 {
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.card-group {
+    visibility: hidden;
+}
+
+.card {
+    padding: 1em;
+}
+
+.card-body h2 {
+    border-bottom: 1px grey solid;
+    padding-bottom: 0.3em;
+}
+
+.card-body p {
+    margin-top: 2em;
+    line-height: 1.5;
+}
+.card-img-top {
+    height: 220px;
+}
+
+.card-footer {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.card-footer a {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .city-2 {
+        display: none;
+    }
+    .city-1 {
+        left: 05%;
+    }
+}
+
+/* 
+---------------- Contact ------------------
+*/
+
+.contact-us {
+    background-image: url(../images/contact.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 2em 0;
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    transform: scaleX(-1);
+    z-index: -1;
+    margin-top: 4em !important;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    padding: 6em 0 4em 0;
+}
+
+@media (max-width: 768px) {
+    .contact-us {
+        top: 92%;
+    }
+}
+.contact-content {
+    transform: scaleX(-1);
+}
+
+.contact-content h2 {
+    font-size: 3em;
+    color: #007bff;
+}
+
+.contact-content h3 {
+    margin-top: 0.5em;
+    font-size: 2em;
+}
+
+.contact-content a {
+    margin-top: 1em;
+    font-size: 1em;
+}
+
+/* 
+---------------- Flight Instructors ------------------
+*/
+
+.flight-instructors {
+    margin-top: 20em;
+}
+@media (max-width: 768px) {
+    .pilot {
+        margin-top: 3em;
+    }
+}
+.pilot-img {
+    height: 200px;
+    width: 280px;
+}
+
+.pilot-description {
+    font-size: 2rem;
+    margin-top: 1em;
+    border-bottom: 3px solid grey;
+}
+
+.pilot-text {
+    margin-top: 0.5em !important;
+}
+
+.pilot-button {
+    font-size: 1.5rem;
+    margin-top: 1em;
+}
+
+/* 
+---------------- flysight ------------------
+*/
+
+.flysight h1 {
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.flysight-content {
+    margin-top: 2em;
+    border: 1px solid grey;
+    padding: 1em 0.5em;
+}
+
+.flysight-image {
+    height: 100%;
+    width: 100%;
+
+    border: 1px solid grey;
+    padding: 0.5em;
+}
+
+.flysight-text {
+    border: 1px solid grey;
+    padding: 1em 0.5em;
+}
+
+@media (max-width: 768px) {
+    .flysight-text {
+        margin-top: 1em;
+    }
+}
+
+.flysight-text h2 {
+    font-size: 4rem;
+    border-bottom: 3px dashed grey;
+    padding-bottom: 0.3em;
+}
+
+.flysight-text p {
+    margin-top: 1em;
+    line-height: 1.5;
+}
+
+/* 
+---------------- Map ------------------
+*/
+
+.map {
+    width: 100%;
+    height: 300px;
+    background-color: green;
+    margin-top: 3em;
+    border-top: 3px solid grey;
+    border-bottom: 3px solid grey;
+}
+
+.transform {
+    transform: scaleX(-1);
+}
+
+/* 
+---------------- Trophys ------------------
+*/
+
+@media (max-width: 768px) {
+    .trophys-newsletter {
+        background-image: none;
+        background-color: rgb(180, 180, 180);
+    }
+    .tropys-border {
+        border-right: 3px rgb(65, 65, 65) dashed;
+    }
+}
+
+.award-icons {
+    font-size: 2rem;
+    color: #007bff;
+    margin-left: 0.5em;
+}
+/* 
+---------------- Footer ------------------
+*/
+
+.page-footer {
+    margin-top: 10em;
+    background-color: gray;
+}
+
+.footer-copyright {
+    margin-top: 3em;
+    background-color: rgb(47, 47, 47);
+    color: white;
+}
+
+.border-footer {
+    border-left: 3px solid rgb(47, 47, 47);
+}
+
+.navigate-footer {
+    border-left: 3px solid rgb(47, 47, 47);
+}
+
+@media (max-width: 768px) {
+    .border-footer {
+        border-bottom: 3px solid rgb(47, 47, 47);
+        border-left: none;
+        margin-top: 1em;
+    }
+
+    .navigate-footer {
+        padding-top: 1em;
+        border-bottom: 3px solid rgb(47, 47, 47);
+        border-left: none;
+    }
+}
+
+.overtext {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 0.2em;
+    font-family: "Oswald", sans-serif;
+}
+
+.list-unstyled li a {
+    color: rgb(47, 47, 47);
+}
