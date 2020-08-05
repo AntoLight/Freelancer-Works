@@ -318,13 +318,46 @@ a {
     width: 100%;
     height: 300px;
     background-color: green;
-    margin-top: 3em;
+
     border-top: 3px solid grey;
     border-bottom: 3px solid grey;
 }
 
 .transform {
     transform: scaleX(-1);
+}
+
+.ubication {
+    text-align: center;
+    padding: 2em;
+    border: 1px solid grey;
+}
+
+@media (max-width: 768px) {
+    .ubication {
+        margin: 0 auto;
+        width: 90%;
+        margin-bottom: 1em;
+    }
+}
+
+.ubication svg {
+    color: #007bff;
+    font-size: 8rem;
+    margin-bottom: 0.2em;
+}
+
+.ubication h2 {
+    font-size: 3rem;
+}
+
+.ubication p {
+    margin-top: 1em;
+    line-height: 1.5;
+    border: 3px solid #007bff;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    opacity: 70%;
 }
 
 /* 
@@ -392,4 +425,15 @@ a {
 
 .list-unstyled li a {
     color: rgb(47, 47, 47);
+}
+
+.logo-footer {
+    margin-top: 1em;
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 0.5em;
+    font-weight: 900;
+}
+
+@media (max-width: 768px) {
 }

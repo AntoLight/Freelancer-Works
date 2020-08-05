@@ -197,34 +197,34 @@ a {
         margin-top: 1em;
     }
 }
-.card {
+.offer-all {
     height: 32em;
     margin: 0 auto;
     transition: 0.3s all ease;
 }
 
-.card:hover {
+.offer-all:hover {
     transform: translateX(1em);
     transform: scale(1.05);
 }
-.card-body {
+.offer {
     text-align: center;
 }
 
-.card img {
+.offer-all img {
     height: 8em;
 }
 
-.card-body p {
+.offer p {
     line-height: 1.5;
 }
 
-.card a {
+.offer-all a {
     padding: 0.5em 1em;
     font-size: 0.8em;
 }
 
-.card-header {
+.offer-header {
     font-family: "Oswald", sans-serif;
     font-weight: 900;
 }
@@ -310,15 +310,6 @@ a {
     margin: 5em 0;
     position: relative;
 }
-.trust::before {
-    content: "";
-    height: 2em;
-    width: 100%;
-    background-color: grey;
-    top: 48%;
-    position: absolute;
-    left: 0;
-}
 
 @media (max-width: 768px) {
     .trust::before {
@@ -331,11 +322,11 @@ a {
     text-align: center;
 }
 .award-text {
-    padding: 1em 0;
-    background-color: rgb(175, 174, 174);
+    padding: 0.5em 1em;
+
     margin-bottom: 7em;
     border-radius: 10px;
-    border: 5px solid rgb(83, 81, 81);
+    border: 2px solid rgb(83, 81, 81);
 }
 @media (max-width: 768px) {
     .award-text {
@@ -345,28 +336,33 @@ a {
         font-size: 1.5rem;
     }
 }
+.award-text blockquote h2 {
+    text-align: left;
+    border-bottom: #007bff 3px solid;
+    width: 50%;
+    padding-bottom: 0.2em;
+    color: #007bff;
+}
 .award-text blockquote p {
     line-height: 2;
     font-family: "Oswald", sans-serif;
     font-weight: 700;
     font-size: 2rem;
-    color: #007bff;
+    text-align: left;
+    padding-top: 1em;
 }
 
-.award-text blockquote p svg {
-    margin: 0 0.5em;
-    color: rgb(230, 170, 42);
+.award-text blockquote h2 svg {
+    padding-right: 0.3em;
 }
 .award-text a {
     font-size: 2rem;
-    margin-top: 0.5em;
+    margin: 0.5em 0 1em 0;
 }
 .award-image img {
     width: 10em;
     height: 20em;
 }
-
-.
 
 /* 
 ---------------- Trophys ------------------
@@ -427,6 +423,42 @@ a {
     color: #007bff;
     margin-left: 0.5em;
 }
+
+/* 
+---------------- Call us ------------------
+*/
+
+.call {
+    text-align: center;
+    width: 40%;
+    margin-top: 2em;
+}
+
+@media (max-width: 768px) {
+    .call {
+        width: 90%;
+    }
+}
+
+.telephone-header {
+    font-size: 2.5rem;
+    color: #007bff;
+}
+
+.telephone-body h5 {
+    font-size: 4rem;
+    color: #007bff;
+}
+
+.telephone-body p {
+    line-height: 1.5;
+}
+
+.telephone-body a {
+    font-size: 1.5rem;
+    margin-top: 1em;
+}
+
 /* 
 ---------------- Footer ------------------
 */

@@ -18,7 +18,7 @@
 <body>
 
 <!-- Navigation Begins -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
 	<a class="navbar-brand" href="#"><img src="images/logo-resize.png" alt=""></a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 	<span class="navbar-toggler-icon"></span>
@@ -193,7 +193,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="flysight container transform" >
+	<div class="flysight container transform" style="overflow: hidden;" >
 		<h1 class="display-1 transform">Or A Discovery Flight? </h1>
 		<div class="row flysight-content vivify delay-1000" id="discovery">
 			<div class="col-md-5 transform">
@@ -230,13 +230,19 @@
 		</div>
 	</div>
 
-	<div>
-		<div class="container">
+	<div class="container">
+		<div>
 			<h1 class="display-3">Our Direction<span class="badge badge-secondary">About Us</span></h1>
 		</div>
-		<div class="map" id="map">
-			
+		<div class="row">
+			<div class="col-md-5 ubication">
+				<i class="fas fa-map-marker-alt"></i>
+				<h2><strong>Location</strong> </h2>
+				<p class="">Direction in more detailed,Direction in more detailed, Direction in more detailed, Direction in more detailed </p>
+			</div>
+			<div class="col-md-7"><div class="map" id="map"></div></div>
 		</div>
+		
 	</div>
 <!-- Footer -->
 <footer class="page-footer font-small blue pt-4">
@@ -245,10 +251,17 @@
 	<div class="container-fluid text-center text-md-left">
   
 	  <!-- Grid row -->
-	  <div class="row container" style="margin: auto 0;">
-   
+	  <div class="row" style="margin: auto 0;">
+		
+		<div class="col-md-6 mb-md-0 mb-6 ">
+  
+			<!-- Links -->
+			<h5 class="text-uppercase logo-footer">Morrison Aviation</h5>
+			<p class="logo-footer-text"><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dolor ante, interdum sed aliquam sed, convallis ut odio.</em>  </p>
+	
+		</div>
 		<!-- Grid column -->
-		<div class="col-md-6 mb-md-0 mb-6 border-footer">
+		<div class="col-md-3 mb-md-0 mb-3 border-footer">
   
 		  <!-- Links -->
 		  <h5 class="text-uppercase overtext">Connect With Us</h5>
@@ -272,7 +285,7 @@
 		<!-- Grid column -->
   
 		<!-- Grid column -->
-		<div class="col-md-6 mb-md-0 mb-6 border-footer">
+		<div class="col-md-3 mb-md-0 mb-3 border-footer">
   
 		  <!-- Links -->
 		  <h5 class="text-uppercase overtext">Know Us</h5>
